@@ -10,7 +10,7 @@ const Basic1 = (props) => {
     return (
         <div>
             {/* <button onClick={clickHandler}>Click</button> */}
-            <button onClick={() => setCount(count + 1)}>Count {count}</button>
+            <button onClick={() => { setCount(prevCount => prevCount + 1); setCount(prevCount => prevCount + 1); }}>Count {count}</button>
             <h1>Basic1</h1>
             <h1>{props.name}</h1>
         </div>
